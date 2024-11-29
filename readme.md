@@ -17,3 +17,7 @@
 - Display random sarcastic messages when users interact with tasks, such as:
 “Congrats! You did the bare minimum.”
 
+
+# Thank you
+
+
