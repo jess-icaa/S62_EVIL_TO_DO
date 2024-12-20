@@ -16,7 +16,7 @@ app.post('/generate-task', (req,res) => {
     res.send({ task: 'Rearrange your books by size. '});
 });
 
-app.get('/sarcastic-qupte', (req, res) => {
+app.get('/sarcastic-quote', (req, res) => {
     res.send({ status: 'Sabotage Mode Activated. Good luck finding your tasks!' });
 });
 
@@ -26,8 +26,8 @@ app.get('/sarcastic-quote', (req, res) => {
         "You're one step closer to being mediocre.",
         "Great! Another task done... for now.",
     ];
-    const randomQote = quotes[Math.floor(Math.random() * quotes.length)];
-    res.send({ quote: randomQote });
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    res.send({ quote: randomQuote });
 });
 
 app.listen(port, () => {
