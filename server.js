@@ -12,6 +12,8 @@ app.get('/ping', (req, res) => {
     res.send('pong');
 });
 
+app.get('/sabotage-mode', (req, res) => {
+    res.send({ status: 'Sabotage Mode Activated. Good luck finding your tasks!' });
 app.post('/generate-task', (req, res) => {
     res.send({ task: 'Rearrange your books by size.' });
 });
