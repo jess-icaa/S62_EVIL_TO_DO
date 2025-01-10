@@ -16,7 +16,7 @@ app.post('/generate-task', (req,res) => {
     res.send({ task: 'Rearrange your books by size. '});
 });
 
-app.get('/sarcastic-quote', (req, res) => {
+app.get('/sabotage-mode', (req, res) => {
     res.send({ status: 'Sabotage Mode Activated. Good luck finding your tasks!' });
 });
 
