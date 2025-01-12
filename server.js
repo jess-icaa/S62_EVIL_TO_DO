@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
+
+const port = 3000;
 const mongoose = require('mongoose');
 
 app.use(express.json());
@@ -34,15 +36,24 @@ app.get('/', (req, res) => {
 });
 
 app.get('/tasks', (req, res) => {
+const port = process.env.PORT || 3000; 
+
+app.use(express.json());
+
+app.get('/', (req, res) => {
     res.send('Welcome to the EVIL TO-DO LIST!');
 });
 
 app.post('/generate-task', (req, res) => {
     res.send({ task: 'Rearrange your books by size.' });
+app.get('/ping', (req, res) => {
+    res.send('pong');
 });
 
 app.get('/sabotage-mode', (req, res) => {
     res.send({ status: 'Sabotage Mode Activated. Good luck finding your tasks!' });
+app.post('/generate-task', (req, res) => {
+    res.send({ task: 'Rearrange your books by size.' });
 });
 
 app.get('/sarcastic-quote', (req, res) => {
@@ -55,6 +66,18 @@ app.get('/sarcastic-quote', (req, res) => {
     res.send({ quote: randomQuote });
 });
 
+
+app.get('/sabotage-mode', (req, res) => {
+    res.send({ status: 'Sabotage Mode Activated. Good luck finding your tasks!' });
+});
+
 app.listen(port, () => {
     console.log(`EVIL TO-DO LIST is running on http://localhost:${port}`);
 });
+
+    console.log(`EVIL TO-DO LIST is running on http://localhost:${port}`);``
+});
+    console.log(`EVIL TO-DO LIST is running on http://localhost:${port}`);
+});
+
+
