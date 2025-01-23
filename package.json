@@ -4,7 +4,8 @@
   "description": "## PROJECT IDEA :  1. Annoying Task Generator 2. Sabotage Mode 3. Sarcastic Motivational Quotes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "react-scripts build"
   },
   "keywords": [],
   "author": "",
@@ -15,3 +16,4 @@
     "mongoose": "^8.9.4"
   }
 }
+
