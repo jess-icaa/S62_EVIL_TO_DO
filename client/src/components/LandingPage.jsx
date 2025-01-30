@@ -5,7 +5,7 @@ const LandingPage = () => {
     <div style={styles.container}>
       <h1 style={styles.title}>EVIL TO-DO LIST</h1>
       <p style={styles.subtitle}>
-        Your "friendly" companion for procrastination and chaos.
+        Your friendly companion for procrastination and chaos.
       </p>
       <ul style={styles.featureList}>
         <li>✅ Annoying Task Generator</li>
